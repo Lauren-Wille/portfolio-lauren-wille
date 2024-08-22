@@ -4,9 +4,15 @@
     <p>mainblock</p>
 
 
-    {%- for post in collections.languages -%}
-        <img src="/assets/images/{{post.data.image}}" alt="{{post.data.title}}">
-        <p>stars: {{post.data.stars}}</p>
-    {%- endfor -%}  
+    <div class="languages">
+        {%- for post in collections.languages -%}
+            <div class="language">
+                <img class="small-image" src="/assets/images/{{post.data.image}}" alt="{{post.data.title}}">
+                <div class="language__stars">
+                    {{ post.data.stars | getStars | safe }}
+                </div>
+            </div>
+        {%- endfor -%}  
+    </div>
 
 {% endblock main %}
