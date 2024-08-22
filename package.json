@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-lauren-wille",
+  "version": "1.0.0",
+  "description": "Portfolio of Lauren Wille",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy",
+    "start": "npx  @11ty/eleventy --serve"
+  },
+  "author": "Lauren Wille",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
