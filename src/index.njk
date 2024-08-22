@@ -2,4 +2,11 @@
 
 {% block main %}
     <p>mainblock</p>
+
+
+    {%- for post in collections.languages -%}
+        <img src="/assets/images/{{post.data.image}}" alt="{{post.data.title}}">
+        <p>stars: {{post.data.stars}}</p>
+    {%- endfor -%}  
+
 {% endblock main %}
