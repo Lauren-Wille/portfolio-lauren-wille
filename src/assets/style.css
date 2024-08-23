@@ -1,3 +1,8 @@
+:root {
+    --primary-colour: hsl(344, 64%, 34%);
+    --secondary-colour: hsl(0, 0%, 0%);
+}
+
 .body {
   display: flex;
   flex-direction: row;
@@ -40,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--primary-colour);
     top: 50%;
     transform: translateY(-50%);
     right: 0;
