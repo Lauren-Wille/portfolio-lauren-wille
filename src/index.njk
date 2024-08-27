@@ -1,9 +1,54 @@
 {% extends "layouts/default.njk" %}        
 
 {% block main %}
-    <img src="assets/images/portrait-portfolio.png" alt="Drawn portrait Lauren Wille">
+    <div class="hero" id="home">
+        <img src="assets/images/portrait-portfolio.png" alt="Drawn portrait Lauren Wille">
+    </div>
 
-    <div class="languages">
+    <section class="about" id="about">
+        <div class="section__left">
+                <p class="section__title">about me</p>
+        </div>
+
+        <div class="section__right">
+            <div class="table">
+                <div class="table__row">
+                    <div class="cell empty"></div>
+                    <div class="cell">
+                        <ul>
+                            <li>22 years old</li>
+                            <li>programming since 18 years old</li>
+                            <li>hobby-cyclist</li>
+                            <li>belgian & welsh</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="table__row">
+                    <div class="cell"><img src="/assets/images/laurenwille.png" alt="Foto of Lauren Wille"></div>
+                    <div class="cell empty"></div>
+                </div>
+                <div class="table__row">
+                    <div class="cell">
+                        <ul>
+                            <li>Bachelor Digital Marketing</li>
+                            <li>current Graduate (front-end) Programming</li>
+                            <li>self-taught beginner Graphic Designer</li>
+                            <li>self employed student: Blue Bird Marketing since 1 August 2023</li>
+                        </ul>
+                    </div>
+                    <div class="cell empty"></div>
+                </div>
+                <div class="table__row">
+                    <div class="cell empty"></div>
+                    <div class="cell">
+                        <img src="/assets/images/logobbm.png" alt="Logo of Blue Bird Marketing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="languages" id="languages">
         {%- for post in collections.languages -%}
             <div class="language">
                 <img class="small-image" src="/assets/images/{{post.data.image}}" alt="{{post.data.title}}">
@@ -12,6 +57,6 @@
                 </div>
             </div>
         {%- endfor -%}  
-    </div>
+    </section>
 
 {% endblock main %}
