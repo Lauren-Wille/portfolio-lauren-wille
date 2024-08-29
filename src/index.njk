@@ -6,8 +6,10 @@
     </div>
 
     <section class="about" id="about">
-        <div class="section__left">
-                <p class="section__title">about me</p>
+        <div class="section__left"  data-animation="pin-left">
+            <div class="pin" data-element="pin">
+                <p class="section__title pin-name">about me</p>
+            </div>
         </div>
 
         <div class="section__right">
@@ -48,15 +50,55 @@
         </div>
     </section>
 
-    <section class="languages" id="languages">
-        {%- for post in collections.languages -%}
-            <div class="language">
-                <img class="small-image" src="/assets/images/{{post.data.image}}" alt="{{post.data.title}}">
-                <div class="language__stars">
-                    {{ post.data.stars | getStars | safe }}
-                </div>
+    <section id="languages">
+        <div class="section__left"  data-animation="pin-left">
+            <div class="pin" data-element="pin">
+                <p class="section__title pin-name">languages</p>
             </div>
-        {%- endfor -%}  
+        </div>
+
+        <div class="section__right">
+            <div class="languages grid-container">
+                {%- for post in collections.languages -%}
+                    <div class="language grid-item">
+                        <img class="language__image" src="/assets/images/{{post.data.image}}" alt="{{post.data.title}}">
+                        <div class="language__stars">
+                            {{ post.data.stars | getStars | safe }}
+                        </div>
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section__left"  data-animation="pin-left">
+            <div class="pin" data-element="pin">
+                <p class="section__title pin-name">projects</p>
+            </div>
+        </div>
+
+        <div class="section__right">
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+            <p>project</p>
+        </div>
     </section>
 
 {% endblock main %}
