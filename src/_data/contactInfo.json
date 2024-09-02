@@ -1,22 +1,22 @@
 [
   {
-    "via" : "email",
-    "link" : "mailto:laurenwille@hotmail.be",
+    "via": "email",
+    "link": "mailto:laurenwille@hotmail.be",
     "image": "mail-icon.png"
   },
   {
-    "via" : "phone",
-    "link" : "telto:+320488493909",
+    "via": "phone",
+    "link": "telto:+320488493909",
     "image": "phone-icon.png"
   },
-  { 
-    "via" : "linkedin",
-    "link" : "www.linkedin.com/in/lauren-🐦-wille-2457141b7",
+  {
+    "via": "linkedin",
+    "link": "https://www.linkedin.com/in/lauren-🐦-wille-2457141b7",
     "image": "linkedin-icon.png"
   },
   {
-    "via" : "github",
-    "link" : "https://github.com/Lauren-Wille",
-    "image":"github-icon.png"
+    "via": "github",
+    "link": "https://www.github.com/Lauren-Wille",
+    "image": "github-icon.png"
   }
 ]

@@ -79,25 +79,22 @@
         </div>
 
         <div class="section__right">
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
-            <p>project</p>
+            <div class="cards">
+                {%- for post in collections.projects -%}
+                    <div class="card">
+                        <p class="project__title">{{post.data.title}}</p>
+                        <div class="project__image">
+                            <img src="{{post.data.image}}" alt="" />
+                        </div>
+                        <p class="project__description">
+                            {{post.data.description}}
+                        </p>
+                        <p class="project__languages">
+                            {{post.data.languages}}
+                        </p>
+                    </div>
+                {%- endfor -%}
+            </div>
         </div>
     </section>
 
