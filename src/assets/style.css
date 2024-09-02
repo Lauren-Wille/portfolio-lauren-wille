@@ -39,6 +39,19 @@ p {
   margin: 0;
 }
 
+.link {
+  color: var(--primary-colour);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: hsl(344, 24%, 53%);
+  }
+}
+
 /*------------------------SECTION------------------------*/
 
 section {
