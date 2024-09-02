@@ -44,6 +44,7 @@ section {
         text-transform: uppercase;
         margin: 0;
         white-space: nowrap;
+        margin-right: 0.5rem;
       }
     }
   }
@@ -142,16 +143,18 @@ section {
     height: auto;
     width: 90%;
     margin-bottom: 5rem;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    padding: 0.5rem 0;
+    background-color: rgb(204, 204, 205);
 
     & .project__title {
       text-align: center;
       margin-left: 0.625rem;
       margin-right: 0.625rem;
+      font-size: 1.5rem;
     }
 
     & .project__image {
@@ -168,10 +171,10 @@ section {
       margin-left: 0.625rem;
       margin-right: 0.625rem;
       text-align: center;
+      font-size: 1.2rem;
     }
 
-    & .project__languages
-    {
+    & .project__languages {
       font-style: italic;
     }
   }
