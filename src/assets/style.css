@@ -3,11 +3,28 @@
   --secondary-colour: hsl(0, 0%, 0%);
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url("/assets/fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/assets/fonts/Lato-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
 /*------------------------GENERAL------------------------*/
 
 .body {
   display: flex;
   flex-direction: row;
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
 
   & .main {
     width: 70%;
@@ -138,6 +155,7 @@ section {
   justify-content: center;
   gap: 1rem;
   align-items: center;
+  color: white;
 
   & .card {
     height: auto;
@@ -148,7 +166,7 @@ section {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 0;
-    background-color: rgb(204, 204, 205);
+    background-color: var(--primary-colour);
 
     & .project__title {
       text-align: center;
@@ -176,6 +194,8 @@ section {
 
     & .project__languages {
       font-style: italic;
+      font-family: "Lato";
+      font-weight: 400;
     }
   }
 }
