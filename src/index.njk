@@ -84,13 +84,13 @@
                     <div class="card">
                         <p class="project__title">{{post.data.title}}</p>
                         <div class="project__image">
-                            <img src="{{post.data.image}}" alt="" />
+                            <img src="/assets/images/{{post.data.image}}" alt="" />
                         </div>
                         <p class="project__description">
                             {{post.data.description}}
                         </p>
                         <p class="project__languages">
-                            {{post.data.languages}}
+                            {{post.data.languagesUsed}}
                         </p>
                     </div>
                 {%- endfor -%}

@@ -1,7 +1,7 @@
 ---
 tags: projects
-title: Clar-development recreation
-image: clar.png
+title: No planet B website
+image: no-planet-b.png
 description: description
 languagesUsed: languages
 ---

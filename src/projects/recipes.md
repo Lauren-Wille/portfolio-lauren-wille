@@ -1,7 +1,7 @@
 ---
 tags: projects
-title: Clar-development recreation
-image: clar.png
+title: Recipe searcher
+image: recipes.png
 description: description
 languagesUsed: languages
 ---
