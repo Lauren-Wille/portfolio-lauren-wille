@@ -30,7 +30,6 @@ section {
   position: relative;
   display: flex;
   gap: 0;
-  height: max-content;
 
   & .section__left {
 

@@ -29,7 +29,8 @@
 
                     const getHeight = () => {
                         const height = child[0].offsetWidth;
-                        return container - height;
+                        return container - height*2;
+                        
                     };
 
                     
@@ -40,7 +41,7 @@
                             start: "top top",
                             end: `100% 0%`,
                             pin: $pinElement,
-                            markers: true,
+                            //markers: true,
                             scrub: true,
                             invalidateOnRefresh: true,
                         },
